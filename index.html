@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santosh Web Creations — Padharo Mhare Digital Dwar</title>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom CSS Variables */
+    :root {
+      --maroon: #7a1223;
+      --cream: #fff6ea;
+      --gold: #caa520;
+      --sand: #f3e6d9;
+    }
+    
+    /* Custom styles */
+    body {
+      background-color: var(--sand);
+      color: var(--maroon);
+    }
+    
+    .mandala-bg {
+      background-image: 
+        radial-gradient(circle at 10% 10%, rgba(202,165,32,0.05), transparent 10%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23caa520' stop-opacity='0.06'/%3E%3Cstop offset='1' stop-color='%23fff6ea' stop-opacity='0.02'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='%23caa520' stroke-opacity='0.06'%3E%3Ccircle cx='400' cy='400' r='300' stroke-width='1'/%3E%3Cg transform='translate(400,400)'%3E%3Cg stroke-width='1'%3E%3Cpath d='M0,-300 A300,300 0 0,1 205,-205'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-size: cover;
+    }
+    
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Custom button hover effects */
+    .btn-primary {
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(122, 18, 35, 0.3);
+    }
+    
+    .btn-outline {
+      transition: all 0.3s ease;
+    }
+    
+    .btn-outline:hover {
+      background-color: var(--maroon);
+      color: var(--cream);
+    }
+  </style>
+</head>
+<body class="mandala-bg antialiased leading-relaxed">
+  <!-- Container -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- NAVBAR -->
+    <nav class="max-w-6xl mx-auto w-full px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-[#7a1223] flex items-center justify-center text-[#fff6ea] shadow-md font-bold">SW</div>
+        <div>
+          <div class="text-lg font-semibold text-[#7a1223]">Santosh Web Creations</div>
+          <div class="text-xs text-[#7a1223]/70">Santosh Kumar — Data Scientist & Digital Craftsman</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#services" class="text-sm hover:underline text-[#7a1223]">Services</a>
+        <a href="#projects" class="text-sm hover:underline text-[#7a1223]">Projects</a>
+        <a href="#contact" class="text-sm hover:underline text-[#7a1223]">Contact</a>
+        <a href="#contact" class="ml-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#caa520] text-black font-semibold btn-primary">🌼 Book Now</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="max-w-6xl mx-auto px-6 flex-1 grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 md:py-20">
+      <div>
+        <p class="text-sm uppercase tracking-widest text-[#7a1223]/80">Padharo Mhare Digital Dwar</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold mt-4 leading-tight text-[#7a1223]">Namaskar Sa — I'm <span class="text-[#7a1223]">Santosh Kumar</span></h1>
+        <p class="mt-4 text-base text-gray-700">A data scientist turned digital artisan. I build <strong>bespoke websites</strong> and <strong>elegant digital identities</strong> for marriage gardens, event venues, and heritage businesses — blending Rajputana soul with modern performance.</p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#7a1223] text-[#fff6ea] font-semibold shadow btn-primary">💼 Hire Me</a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 rounded-full border-2 border-[#caa520] text-[#7a1223] font-semibold btn-outline">🌸 Book Now</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-3 text-sm">
+          <div class="bg-white/80 rounded-lg p-3 shadow text-center">
+            <div class="text-[#7a1223] font-bold">300+</div>
+            <div class="text-gray-600">Hours of Craft</div>
+          </div>
+          <div class="bg-white/80 rounded-lg p-3 shadow text-center">
+            <div class="text-[#7a1223] font-bold">50+</div>
+            <div class="text-gray-600">Local Clients</div>
+          </div>
+          <div class="bg-white/80 rounded-lg p-3 shadow text-center">
+            <div class="text-[#7a1223] font-bold">99%</div>
+            <div class="text-gray-600">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Illustrative Card -->
+      <div class="relative mt-8 md:mt-0">
+        <div class="absolute -right-8 -top-8 w-[260px] h-[260px] rounded-2xl bg-[#7a1223]/10 blur-3xl"></div>
+        <div class="rounded-2xl overflow-hidden shadow-lg bg-[#fff6ea] border border-[#7a1223]/10">
+          <img src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/neemrana-fort-palace---15th-century-delhi-jaipur-highway/IMG_0482_1_copy_juczu8" 
+               alt="Rajwadi Wedding Showcase" 
+               class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-[#7a1223]">Rajwadi Wedding — Showcase</h3>
+            <p class="mt-2 text-sm text-gray-600">A rustic-luxury garden setup with curated lighting, live music, and local craft decor.</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#projects" class="text-sm px-3 py-2 rounded bg-[#caa520] font-semibold btn-primary">View Project</a>
+              <a href="#contact" class="text-sm px-3 py-2 rounded border border-[#7a1223] btn-outline">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-12 bg-[#f3e6d9]">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[#7a1223]">Digital Sewa</h2>
+        <p class="mt-2 text-gray-700">Services designed for heritage venues and experience-driven businesses.</p>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-xl bg-white shadow hover:shadow-md transition-shadow">
+            <h3 class="font-semibold text-[#7a1223]">Bespoke Website Design</h3>
+            <p class="mt-2 text-sm text-gray-600">Tailored layouts, SEO-conscious markup, and mobile-first performance.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-white shadow hover:shadow-md transition-shadow">
+            <h3 class="font-semibold text-[#7a1223]">Event Booking Pages</h3>
+            <p class="mt-2 text-sm text-gray-600">Reserve flows, enquiry forms, and booking CTAs that convert.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-white shadow hover:shadow-md transition-shadow">
+            <h3 class="font-semibold text-[#7a1223]">Branding & Visual Identity</h3>
+            <p class="mt-2 text-sm text-gray-600">Logos, color systems, and print-ready invites inspired by Rajasthani craft.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / GALLERY -->
+    <section id="projects" class="py-12">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-[#7a1223]">Chuninda Kaam (Selected Works)</h2>
+          <a href="#" class="text-sm text-[#7a1223]/80 hover:underline">View all →</a>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <img src="https://image.wedmegood.com/resized/720X/uploads/member/3907/1554265967_neemrana_fort2.jpg" 
+                 alt="Nimrana Fort Palace" 
+                 class="w-full h-48 object-cover">
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold text-[#7a1223]">Nimrana Fort Palace</h3>
+              <p class="text-sm text-gray-600 mt-1">A premium site for a local wedding garden — booking-ready and gallery-forward.</p>
+            </div>
+          </div>
+
+          <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/City-Palace-Alwar.jpg" 
+                 alt="Royal Events Portal" 
+                 class="w-full h-48 object-cover">
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold text-[#7a1223]">Royal Events Portal</h3>
+              <p class="text-sm text-gray-600 mt-1">Event listing and contact integration for event planners.</p>
+            </div>
+          </div>
+
+          <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <img src="https://img.freepik.com/free-vector/local-business-landing-page_23-2148590606.jpg" 
+                 alt="Local Business Landing" 
+                 class="w-full h-48 object-cover">
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold text-[#7a1223]">Local Business Landing</h3>
+              <p class="text-sm text-gray-600 mt-1">Fast-loading landing pages for small businesses and cafes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-12 bg-[#f3e6d9]">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div>
+            <h2 class="text-2xl font-bold text-[#7a1223]">Padharo Sa, Sampark Karo</h2>
+            <p class="mt-2 text-gray-700">I build websites that feel like home and perform like a machine. For bookings or project discussions — reach out.</p>
+
+            <ul class="mt-6 space-y-3 text-sm text-gray-700">
+              <li><strong class="text-[#7a1223]">Founder:</strong> Santosh Kumar — Data Scientist</li>
+              <li><strong class="text-[#7a1223]">Studio:</strong> Santosh Web Creations</li>
+              <li><strong class="text-[#7a1223]">Location:</strong> Bheem Nagar, Khudanpuri Alwar, Rajasthan</li>
+              <li><strong class="text-[#7a1223]">Email:</strong> <a href="mailto:santoshkumardatascientist@gmail.com" class="text-[#7a1223] underline hover:no-underline">santoshkumardatascientist@gmail.com</a></li>
+              <li><strong class="text-[#7a1223]">Phone:</strong> +91-9929862236</li>
+            </ul>
+
+            <div class="mt-6 flex gap-3">
+              <a href="mailto:santoshkumardatascientist@gmail.com" class="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-[#7a1223] text-[#fff6ea] font-semibold btn-primary">📩 Send Email</a>
+              <a href="tel:+919929862236" class="inline-flex items-center gap-2 px-4 py-3 rounded-full border-2 border-[#7a1223] text-[#7a1223] font-semibold btn-outline">📞 Call</a>
+            </div>
+          </div>
+
+          <div>
+            <form class="bg-white p-6 rounded-xl shadow" id="contactForm">
+              <h3 class="font-semibold text-[#7a1223]">Quick Message</h3>
+              <p class="text-sm text-gray-600 mt-1">Share your date, guest estimate, or brief project note — I will reply soon.</p>
+
+              <div class="mt-4 grid grid-cols-1 gap-3">
+                <input type="text" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#caa520]" placeholder="Your name" required>
+                <input type="text" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#caa520]" placeholder="Email or phone" required>
+                <textarea class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#caa520]" rows="4" placeholder="Tell me about your event or project" required></textarea>
+                <div class="flex justify-end">
+                  <button type="submit" class="px-5 py-3 bg-[#caa520] rounded text-black font-semibold btn-primary">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#7a1223] text-[#fff6ea] py-6 mt-auto">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div>
+          <div class="font-semibold">Santosh Web Creations</div>
+          <div class="text-sm opacity-80">Sewa with pride from Rajasthan 🌾</div>
+        </div>
+        <div class="text-sm opacity-80">© <span id="yr"></span> Santosh Kumar — All rights reserved</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      this.reset();
+    });
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
